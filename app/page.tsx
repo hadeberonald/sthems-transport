@@ -107,20 +107,55 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+ {/* Flexible Booking Highlight Section */}
+      <section className="py-20 bg-white relative overflow-hidden">
+        <div className="section-container relative z-10">
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-gradient-to-br from-primary via-primary-dark to-accent-teal rounded-sm p-12 md:p-16 text-white relative overflow-hidden shadow-2xl animate-slide-up">
+              {/* Decorative elements */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-5 rounded-full -mr-32 -mt-32"></div>
+              <div className="absolute bottom-0 left-0 w-48 h-48 bg-accent-orange opacity-10 rounded-full -ml-24 -mb-24"></div>
+              
+              <div className="relative z-10 text-center">
+                <div className="inline-block mb-6">
+                  <span className="bg-accent-orange bg-opacity-20 text-accent-orange px-4 py-2 rounded-sm text-sm font-medium tracking-wider uppercase">
+                    Flexible Options
+                  </span>
+                </div>
+                
+                <h2 className="text-4xl md:text-5xl font-serif font-light mb-6 leading-tight">
+                  Need Something <span className="font-semibold">Different?</span>
+                </h2>
+                
+                <div className="w-24 h-1 bg-accent-orange mx-auto mb-8"></div>
+                
+                <p className="text-gray-200 text-lg md:text-xl mb-10 max-w-3xl mx-auto leading-relaxed">
+                  Build your own experience with our flexible booking option. Choose your accommodation,
+                  select specific tours, and customize your transport needs to create your perfect Johannesburg adventure.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                  <Link 
+                    href="/booking?type=flexible" 
+                    className="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-sm font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-xl inline-flex items-center gap-2"
+                  >
+                    Customize Your Experience
+                    <span className="text-accent-orange">→</span>
+                  </Link>
+                  <Link 
+                    href="#packages" 
+                    className="border-2 border-white text-white hover:bg-white hover:text-primary px-8 py-4 rounded-sm font-semibold transition-all duration-300"
+                  >
+                    View Packages
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* Packages Section */}
       <section id="packages" className="py-24 bg-white">
-        {/* Flexible Booking Option */}
-          <div className="mt-12 text-center p-12 bg-gradient-to-r from-primary to-primary-dark rounded-sm text-white animate-slide-up">
-            <h3 className="text-3xl font-serif font-semibold mb-4">Need Something Different?</h3>
-            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
-              Build your own experience with our flexible booking option. Choose your accommodation,
-              select specific tours, and customize your transport needs.
-            </p>
-            <Link href="/booking?type=flexible" className="btn-secondary bg-white text-primary hover:bg-gray-100">
-              Customize
-            </Link>
-          </div>
         <div className="section-container">
           <div className="text-center mb-16 animate-slide-up">
             <p className="text-accent-orange font-medium tracking-widest text-sm mb-4 uppercase">
