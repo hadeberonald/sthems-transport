@@ -78,7 +78,7 @@ export default function Home() {
             </h1>
             <div className="divider-accent mx-auto"></div>
             <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 font-light leading-relaxed">
-              Discover Johannesburg with our all-inclusive packages featuring luxury accommodation,
+              Discover Johannesburg with our all-inclusive packages featuring accommodation,
               expert-guided tours, and seamless transport services
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -110,6 +110,17 @@ export default function Home() {
 
       {/* Packages Section */}
       <section id="packages" className="py-24 bg-white">
+        {/* Flexible Booking Option */}
+          <div className="mt-12 text-center p-12 bg-gradient-to-r from-primary to-primary-dark rounded-sm text-white animate-slide-up">
+            <h3 className="text-3xl font-serif font-semibold mb-4">Need Something Different?</h3>
+            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+              Build your own experience with our flexible booking option. Choose your accommodation,
+              select specific tours, and customize your transport needs.
+            </p>
+            <Link href="/booking?type=flexible" className="btn-secondary bg-white text-primary hover:bg-gray-100">
+              Customize
+            </Link>
+          </div>
         <div className="section-container">
           <div className="text-center mb-16 animate-slide-up">
             <p className="text-accent-orange font-medium tracking-widest text-sm mb-4 uppercase">
@@ -168,17 +179,7 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Flexible Booking Option */}
-          <div className="mt-12 text-center p-12 bg-gradient-to-r from-primary to-primary-dark rounded-sm text-white animate-slide-up">
-            <h3 className="text-3xl font-serif font-semibold mb-4">Need Something Different?</h3>
-            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
-              Build your own experience with our flexible booking option. Choose your accommodation,
-              select specific tours, and customize your transport needs.
-            </p>
-            <Link href="/booking?type=flexible" className="btn-secondary bg-white text-primary hover:bg-gray-100">
-              Create Custom Package
-            </Link>
-          </div>
+          
         </div>
       </section>
 
@@ -273,9 +274,7 @@ export default function Home() {
             ))}
           </div>
 
-          <p className="text-center text-gray-500 mt-8 text-sm">
-            Images coming soon. Add your photos via the Admin Portal.
-          </p>
+          
         </div>
       </section>
 
